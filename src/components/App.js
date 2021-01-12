@@ -1,48 +1,38 @@
 import React, { Component } from "react";
 import 'antd/dist/antd.css';
 import '../styles/App.css';
-import { Layout, Menu } from 'antd';
+import { Layout } from 'antd';
 import Navbar from "./Navbar";
 
-const { Header, Content, Footer } = Layout;
+import { Route, Switch } from "react-router-dom";
+import Home from "./Home";
+import Contacts from "./Contacts";
+import About from "./About";
+
+const { Header, Footer } = Layout;
 
 class App extends Component {
     render() {
         return (
             <div>
                 <Layout className="layout">
+
                     <Header>
                         <div className="logo" />
                         <Navbar/>
                     </Header>
-                    <Content style={{ padding: '0 50px' }}>
-                        <div className="site-layout-content">
-                            <h1>Content</h1>
-                            <h2>Обязательны</h2>
-                            <ul>
-                                <li>Список всех контактов.</li>
-                                <li>Возможность найти контакт со списка (строка поиска)</li>
-                                <li>Добавление, изминение, удаление контакта</li>
-                                <li>Использовать препроцессор Sass</li>
-                                <li>Использовать сборщик проектов Webpac</li>
-                                <li>Создать меню адаптивное с пунктами (использовать Routs):
-                                    <ol>
-                                        <li> Home, который ведет на домашнюю страницу с Заголовком "Home"</li>
-                                        <li>Contacts, который ведет страницу с контактами "Contacts"</li>
-                                        <li>About, который ведет страницу с Заголовком "About"</li>
-                                    </ol>
-                                </li>
-                            </ul>
-                            <h2>Будет плюсом</h2>
-                            <p>
-                                Добавление контакту фотографии,
-                                Разработать дизайн приложения
-                            </p>
-                        </div>
-                    </Content>
+
+                    <Switch>
+                        <Route exact path="/" component={Home} />
+                        <Route path="/home" component={Home} />
+                        <Route path="/contacts" component={Contacts} />
+                        <Route path="/about" component={About} />
+                    </Switch>
+
                     <Footer style={{ textAlign: 'center' }}>
                         Phonebook | Ant Design © 2021 Created by <a href="https://github.com/OlegBiletsky/Phonebook" target="blank">Oleg Biletsky</a>
                     </Footer>
+
                 </Layout>
             </div>
         );
