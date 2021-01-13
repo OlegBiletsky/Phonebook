@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-import 'antd/dist/antd.css';
-import '../styles/App.css';
+import { NavLink } from "react-router-dom";
 import { Menu } from 'antd';
-import { NavLink, Link } from "react-router-dom";
 
 class Navbar extends Component {
     render() {
