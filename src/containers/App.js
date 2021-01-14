@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
 import 'antd/dist/antd.css';
-import '../styles/App.css';
+import '../styles/App.scss';
 import { Layout } from 'antd';
 import HeaderComponent from "../components/HeaderComponents";
 import Home from "../components/Home";
