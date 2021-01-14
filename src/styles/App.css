@@ -9,15 +9,33 @@ h1 {
     min-height: 500px;
     padding: 24px;
     background: #fff;
-  }
-  #components-layout-demo-top .logo {
+}
+
+
+#components-layout-demo-top .logo {}
+.logo{
     float: left;
     width: 120px;
     height: 31px;
     margin: 16px 24px 16px 0;
-    background: rgba(255, 255, 255, 0.3);
-  }
-  .ant-row-rtl #components-layout-demo-top .logo {
+    /* background: rgba(255, 255, 255, 0.3); */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+    
+}
+
+
+.ant-row-rtl #components-layout-demo-top .logo {}
+.ant-row-rtl .logo {
     float: right;
     margin: 16px 0 16px 24px;
-  }
+}
+
+.anticon svg {
+    font-size: 35px;
+    color: #58a8eb; 
+}

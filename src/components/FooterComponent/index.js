@@ -8,7 +8,7 @@ class FooterComponent extends Component {
         return (
             <div>
                 <Footer style={{ textAlign: 'center' }}>
-                        Phonebook | Ant Design © 2021 Created by <a href="https://github.com/OlegBiletsky/Phonebook" target="blank">Oleg Biletsky</a>
+                        Phonebook | Ant Design © 2021 Developed by <a href="https://github.com/OlegBiletsky/Phonebook" target="blank">Oleg Biletsky</a>
                 </Footer>
             </div>
         );
