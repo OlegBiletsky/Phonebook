@@ -13,12 +13,13 @@ class App extends Component {
     render() {
         return (
             <div>
-            
+                {/*Layout from Ant Design*/}
                 <Layout className="layout">
 
-                   
+                    {/*Logo and Navbar Menu with 3 tabs*/}
                     <HeaderComponent />
 
+                    {/*Main section with Route-Switch: Home, Contacts or About*/}
                     <Switch>
                         <Route exact path="/" component={Home} />
                         <Route path="/home" component={Home} />
@@ -26,7 +27,7 @@ class App extends Component {
                         <Route path="/about" component={About} />
                     </Switch>
                     
-                  
+                    {/*Footer with name, design creators, copyright and my LinkedIn*/}
                     <FooterComponent /> 
 
                 </Layout>
