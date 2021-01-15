@@ -12,7 +12,7 @@ class HeaderComponent extends Component {
                 <Header>
                     <div className="logo">
                         <BookOutlined style={{color: "blue"}} />{/*blue icon for Logo*/}  
-                        Phonebook             {/*text for Logo*/}       
+                        <p>Phonebook</p>             {/*text for Logo*/}       
                     </div>
                     <Navbar/>  {/* Navbar menu with 3 tabs */}
                 </Header>      

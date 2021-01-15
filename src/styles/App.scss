@@ -14,19 +14,24 @@ h1{
 
 
 #components-layout-demo-top .logo {}
+
 .logo{
     float: left;
     width: 120px;
     height: 31px;
-    margin: 16px 24px 16px 0;
-    /* background: rgba(255, 255, 255, 0.3); */
+    margin: 16px 40px 16px 0;
+    padding-left: 40px;
+    // background: rgba(255, 255, 255, 0.3);
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'DM Serif Display', serif;
     font-size: 18px;
-    
+  p{
+    color:#58a8eb;  
+    margin-top: 20px;
+  }  
 }
 
 
