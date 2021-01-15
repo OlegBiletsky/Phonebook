@@ -1,6 +1,7 @@
 h1{
-    color: hsl(303, 71%, 51%);
+    color: hsl(224, 68%, 56%);
     text-align: center;
+    font-size: 28px;
 }
 
 
@@ -39,3 +40,6 @@ h1{
     font-size: 35px;
     color: #58a8eb; 
 }
+
+
+@import "../styles/Navbar.scss";
