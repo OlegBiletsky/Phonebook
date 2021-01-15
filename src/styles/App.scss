@@ -12,9 +12,6 @@ h1{
     background: #fff;
 }
 
-
-#components-layout-demo-top .logo {}
-
 .logo{
     float: left;
     width: 120px;
@@ -34,8 +31,6 @@ h1{
   }  
 }
 
-
-.ant-row-rtl #components-layout-demo-top .logo {}
 .ant-row-rtl .logo {
     float: right;
     margin: 16px 0 16px 24px;
@@ -47,4 +42,9 @@ h1{
 }
 
 
+@import "../styles/Header.scss";
 @import "../styles/Navbar.scss";
+@import "../styles/Home.scss";
+@import "../styles/Contacts.scss";
+@import "../styles/About.scss";
+@import "../styles/Footer.scss";
