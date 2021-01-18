@@ -7,7 +7,7 @@ class Contacts extends Component {
             <div>
                 <Content style={{ padding: '0 50px' }}>
                     <div className="site-layout-content">
-                        <h1> Contacts</h1>
+                        <h1 className="Contacts-title"> Contacts</h1>
                         <h2>123</h2>
                     </div>
                 </Content>

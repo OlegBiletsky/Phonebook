@@ -8,7 +8,7 @@ class Home extends Component {
             <div>
                 <Content style={{ padding: '0 50px' }}>
                     <div className="site-layout-content">
-                        <h1>Home</h1>
+                        <h1 className="Home-title">Home</h1>
                         <h2>Обязательны</h2>
                         <ul>
                             <li>Список всех контактов.</li>

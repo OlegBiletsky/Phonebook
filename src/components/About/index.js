@@ -7,7 +7,7 @@ class About extends Component {
             <div>
                 <Content style={{ padding: '0 50px' }}>
                     <div className="site-layout-content">
-                        <h1> About </h1>
+                        <h1 className="About-title"> About </h1>
                         <h2>bla bla</h2>
                     </div>
                 </Content>
