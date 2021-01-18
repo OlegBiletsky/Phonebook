@@ -1,8 +1,6 @@
 import React from 'react';
 import { List, Avatar, Button } from 'antd';
 
-
-
 class ContactsList extends React.Component {
 //   state = {
 //     initLoading: true,
@@ -25,16 +23,24 @@ class ContactsList extends React.Component {
     // const { list } = this.state;
     const data = [
         {
-          title: 'Ant Design Title 1',
+            subscriberName: 'Oleg',
+            subscriberLastName: "Jeremy",
+            subscriberPhoneNumber: '+30685418616',
         },
         {
-          title: 'Ant Design Title 2',
+            subscriberName: 'Roman',
+            subscriberLastName: "Dowe",
+            subscriberPhoneNumber: '+30685418616',
         },
         {
-          title: 'Ant Design Title 3',
+            subscriberName: 'Viki',
+            subscriberLastName: "Stalibam",
+            subscriberPhoneNumber: '+30685418616',
         },
         {
-          title: 'Ant Design Title 4',
+            subscriberName: 'Oliver',
+            subscriberLastName: "Fridux",
+            subscriberPhoneNumber: '+30685418616',
         },
     ];
     return (
@@ -45,13 +51,14 @@ class ContactsList extends React.Component {
 
         renderItem={item => (
             <List.Item actions={[
-                <a key="list-loadmore-edit">edit</a>, 
-                <a key="list-loadmore-more">more</a>
+                <Button key="contact-list-edit" type="primary">Edit contact</Button>,
+                <Button key="contact-list-delete" type="default" danger>Delete contact</Button>,
             ]}>
+
                 <List.Item.Meta
                     avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"/>}
-                    title={<a href="https://ant.design">{item.title}</a>}
-                    description="Ant Design, a design language for background   applications, is refined by Ant UED Team"
+                    title={ ` ${item.subscriberName} ${item.subscriberLastName} ` }
+                    description={item.subscriberPhoneNumber}
                 />
           
           </List.Item>
